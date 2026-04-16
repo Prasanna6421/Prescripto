@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Doctors from "./components/Doctors";
 import DoctorDetail from "./components/DoctorDetail";
-import Auth from "./components/auth";
+import Auth from "./components/Auth";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Footer from "./components/Footer";
