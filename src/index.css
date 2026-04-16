@@ -1,0 +1,41 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-max-width: 1200px;
+  --container-padding: 30px;
+  --section-spacing: 60px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.app-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.unified-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 15px;
+    --section-spacing: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 12px;
+    --section-spacing: 30px;
+  }
+}
